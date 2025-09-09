@@ -3,7 +3,7 @@ name: Daily Real Estate Bot
 on:
   schedule:
     # 매일 한국시간 오전 9시 (UTC 자정)
-    - cron: '0 0 * * *'
+    - cron: '30 23 * * *'
   
   # 수동 실행도 가능
   workflow_dispatch:
