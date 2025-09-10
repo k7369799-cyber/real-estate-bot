@@ -68,7 +68,7 @@ class GitHubRealEstateBot:
         ]
         
         # 전용면적 옵션
-        area_options = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+        area_options = [18, 19, 20, 21, 22, 23, 24]
         
         for i in range(property_count):
             selected_area = random.choice(area_options)
