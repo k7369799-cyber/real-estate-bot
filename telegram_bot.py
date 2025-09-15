@@ -77,6 +77,7 @@ class GitHubRealEstateBot:
                 "price": random.choice(price_options),
                 "area": f"{selected_area}평(전용)",
                 "rooms": "방3개/화장실2개", 
+                "parking": "주차 1대 가능", 
                 "location": f"{region_name} {random.choice(locations)}",
                 "type": random.choice(["빌라", "다세대", "연립"]),
                 "floor": f"{random.randint(1, 4)}층/{random.randint(2, 5)}층",
@@ -118,6 +119,7 @@ class GitHubRealEstateBot:
                     for i, prop in enumerate(properties, 1):
                         region_msg += f"\n   {i}. <b>{prop['price']}</b> | {prop['area']}\n"
                         region_msg += f"      🏠 {prop['type']} | {prop['rooms']}\n" 
+                        region_msg += f"      🅿️ {prop['parking']}\n"
                         region_msg += f"      📍 {prop['location']} | {prop['floor']}\n"
                         region_msg += f"      📱 출처: {prop['source']}\n"
                         
